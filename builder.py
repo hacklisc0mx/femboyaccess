@@ -12,12 +12,12 @@ class GUIBuilder(MDBoxLayout):
         title_label = MDLabel(text='FemboyAccess Builder', halign="center", font_style="H5")
         self.add_widget(title_label)
 
-        server_id_label = MDLabel(text='Server ID:')
+        server_id_label = MDLabel(text='1473099973959876840:')
         self.add_widget(server_id_label)
         self.server_id_input = MDTextField()
         self.add_widget(self.server_id_input)
 
-        bot_token_label = MDLabel(text='Bot Token:')
+        bot_token_label = MDLabel(text='e17d59ea5af0e8ab0d3b72d90f6a47bfce1d1e2d834987c21880035dcc200476:')
         self.add_widget(bot_token_label)
         self.bot_token_input = MDTextField()
         self.add_widget(self.bot_token_input)
@@ -50,4 +50,5 @@ class GUIBuilderApp(MDApp):
         return GUIBuilder()
 
 if __name__ == '__main__':
+
     GUIBuilderApp().run()
